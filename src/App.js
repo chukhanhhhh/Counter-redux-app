@@ -2,25 +2,14 @@
 import './App.css';
 import Counter from './containers/ReduxClassComponent/Counter';
 import CounterHook from './containers/ReduxHook/CounterHook'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-
 function App() {
   return (
     <div className="App">
-        <Router>
-          <Switch>
-            <Route path="/Counter">
-              <Counter/>
-            </Route>
-            <Route path="">
-              <CounterHook/>
-            </Route>
-          </Switch>
-        </Router>
+        <h1>Use redux class component</h1>
+        <Counter />
+        <hr/>
+        <h1>Use redux hook</h1>
+        <CounterHook />
     </div> 
   );
 }

@@ -7,13 +7,13 @@ import * as actionTypes from '../../store/action'
 export class Counter extends Component {
     render() {
         return (
-            <div>
-                <CounterOutput value={this.props.counter}/>
+            <div className="counter-class-component">
                 <ConterControl lablel = "Increment" handleClicked = {this.props.onIncrementCounter} />
                 <ConterControl lablel = "Decrement" handleClicked = {this.props.onDecrementCounter} />
-                <ConterControl lablel = "Reset" handleClicked = {this.props.onResetCounter} />
                 <ConterControl lablel = "ADD" handleClicked = {this.props.onAddCounter} />
                 <ConterControl lablel = "Subtract" handleClicked = {this.props.onSubtractCounter} />
+                <ConterControl lablel = "Reset" handleClicked = {this.props.onResetCounter} />
+                <CounterOutput value={this.props.counter}/>
             </div>
         )
     }
